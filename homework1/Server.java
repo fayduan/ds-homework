@@ -12,7 +12,7 @@ public class Server {
         try {
             TranslatorImpl trans = new TranslatorImpl();
             LocateRegistry.createRegistry(10240);
-            Naming.bind("rmi://127.0.0.1:10240/translate",trans);
+            Naming.bind("rmi://192.168.0.104:10240/translate",trans);
             System.out.println("Server started...");
         }catch (Exception e){
             e.printStackTrace();
